@@ -3,38 +3,26 @@ const path = require("path");
 const Ajv = require("ajv").default;
 const Dao = require("../dao/Dao");
 
-class DiagramAbl {
+class TopicAbl {
     constructor() {
         this.ajv = new Ajv();
-        this.dao = new Dao(path.join("__dirname", "..", "storage", "DiagramList.json"));
+        this.dao = new Dao(path.join("__dirname", "..", "storage", "TopicList.json"));
         this.createSchema = {
             type: "object",
             properties: {
                 name: { type: "string" },
-                type: { type: "string" },
-                authorList: { type: "array", items: {type: "string"} },
-                description: { type: "string" },
-                topics: { type: "array", items: { type: "string" } },
-                publishDate: { type: "string" },
-                img: { type: "string" },
-                published: { type: "boolean" },
+                description: { type: "string" }
             },
-            required: ["name","type","description", "authorList","topics", "publishDate","img","published"]
+            required: ["name", "description"]
         }
         this.updateSchema = {
             type: "object",
             properties: {
                 id: { type: "string" },
                 name: { type: "string" },
-                type: { type: "string" },
-                authorList: { type: "array", items: { type: "string" } },
-                description: { type: "string" },
-                topics: { type: "array", items: { type: "string" } },
-                publishDate: { type: "string" },
-                img: { type: "string" },
-                published: { type: "boolean" },
+                description: { type: "string" }
             },
-            required: ["id","name", "type", "description", "authorList", "topics", "publishDate", "img", "published"]
+            required: ["name", "description", "id"]
         }
         this.getSchema = { //also delete schema
             type: "object",
@@ -105,4 +93,4 @@ class DiagramAbl {
         }
     }
 }
-module.exports = DiagramAbl;
+module.exports = TopicAbl;

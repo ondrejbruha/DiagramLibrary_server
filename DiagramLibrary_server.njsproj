@@ -13,7 +13,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <NodejsPort>8000</NodejsPort>
-    <StartWebBrowser>True</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
     <DebuggerPort>8001</DebuggerPort>
   </PropertyGroup>
@@ -23,16 +23,26 @@
     <Content Include="abl\DiagramAbl.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="abl\AuthorAbl.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="abl\TopicAbl.js" />
     <Content Include="dao\dao.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="app.js" />
+    <Content Include="routes\author.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\diagram.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="routes\index.js" />
+    <Content Include="routes\topic.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\users.js" />
     <Content Include="storage\DiagramList.json">
       <SubType>Code</SubType>

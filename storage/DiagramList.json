@@ -1,13 +1,87 @@
 [
   {
-    "id": "neco",
-    "name": "nevim"
+    "name": "graf 5",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph modified",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "e2ad64271bee7be1"
   },
   {
-    "neco": "necojineho"
+    "name": "graf 2",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "34093f96c9510b1a"
   },
   {
-    "neco": "neco",
-    "id": "307937f1d3e84733"
+    "name": "graf 3",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "f20b04b6c978bba0"
+  },
+  {
+    "name": "graf 4",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "15fbdfec53f05157"
+  },
+  {
+    "name": "graf 5",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "e2ad64271bee7be1"
   }
 ]
