@@ -43,7 +43,6 @@
     <Content Include="routes\topic.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="routes\users.js" />
     <Content Include="storage\DiagramList.json">
       <SubType>Code</SubType>
     </Content>
