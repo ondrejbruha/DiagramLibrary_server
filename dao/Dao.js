@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const crypto = require("crypto");
 const rf = fs.promises.readFile;
 const wf = fs.promises.writeFile;

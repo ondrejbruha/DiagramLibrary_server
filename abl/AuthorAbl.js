@@ -1,7 +1,5 @@
 const { request } = require("http");
 const path = require("path");
-const Ajv = require("ajv").default;
-const Dao = require("../dao/Dao");
 const Abl = require("./CRUD_ABL");
 
 const dirPath = path.join(__dirname, "..", "storage", "authorList.json");
