@@ -4,13 +4,13 @@ const Ajv = require("ajv").default;
 const Dao = require("../dao/Dao");
 
 class Abl {
-    constructor(createSchema, updateSchema, getSchema, deleteSchema, path) {
+    constructor(createSchema, updateSchema, getSchema, deleteSchema, dirPath) {
         this.createSchema = createSchema;
         this.updateSchema = updateSchema;
         this.getSchema = getSchema;
         this.deletSchema = deleteSchema;
         this.ajv = new Ajv();
-        this.dao = new Dao(path);
+        this.dao = new Dao(dirPath);
     }
     async create(req, res) {
         try {
