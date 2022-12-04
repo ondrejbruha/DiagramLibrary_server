@@ -6,7 +6,7 @@
       "id1",
       "id2"
     ],
-    "description": "this is first graph modified",
+    "description": "this is first graph modified secon times",
     "topics": [
       "id1",
       "id2"
@@ -83,5 +83,22 @@
     "img": "path/to/img",
     "published": true,
     "id": "e2ad64271bee7be1"
+  },
+  {
+    "name": "graf 5",
+    "type": "graf",
+    "authorList": [
+      "id1",
+      "id2"
+    ],
+    "description": "this is first graph",
+    "topics": [
+      "id1",
+      "id2"
+    ],
+    "publishDate": "25.11.2022",
+    "img": "path/to/img",
+    "published": true,
+    "id": "c435e8d64a3b2d45"
   }
 ]

@@ -2,107 +2,50 @@ const { request } = require("http");
 const path = require("path");
 const Ajv = require("ajv").default;
 const Dao = require("../dao/Dao");
+const Abl = require("./CRUD_ABL");
 
-class DiagramAbl {
+const dirPath = path.join(__dirname, "..", "storage", "diagramList.json");
+
+const createSchema = {
+    type: "object",
+    properties: {
+        name: { type: "string" },
+        type: { type: "string" },
+        authorList: { type: "array", items: { type: "string" } },
+        description: { type: "string" },
+        topics: { type: "array", items: { type: "string" } },
+        publishDate: { type: "string" },
+        img: { type: "string" },
+        published: { type: "boolean" },
+    },
+    required: ["name", "type", "description", "authorList", "topics", "publishDate", "img", "published"]
+}
+const updateSchema = {
+    type: "object",
+    properties: {
+        id: { type: "string" },
+        name: { type: "string" },
+        type: { type: "string" },
+        authorList: { type: "array", items: { type: "string" } },
+        description: { type: "string" },
+        topics: { type: "array", items: { type: "string" } },
+        publishDate: { type: "string" },
+        img: { type: "string" },
+        published: { type: "boolean" },
+    },
+    required: ["id", "name", "type", "description", "authorList", "topics", "publishDate", "img", "published"]
+}
+const getSchema = { //also delete schema
+    type: "object",
+    properties: {
+        id: { type: "string" },
+    },
+    required: ["id"]
+}
+
+class DiagramAbl extends Abl{
     constructor() {
-        this.ajv = new Ajv();
-        this.dao = new Dao(path.join("__dirname", "..", "storage", "DiagramList.json"));
-        this.createSchema = {
-            type: "object",
-            properties: {
-                name: { type: "string" },
-                type: { type: "string" },
-                authorList: { type: "array", items: {type: "string"} },
-                description: { type: "string" },
-                topics: { type: "array", items: { type: "string" } },
-                publishDate: { type: "string" },
-                img: { type: "string" },
-                published: { type: "boolean" },
-            },
-            required: ["name","type","description", "authorList","topics", "publishDate","img","published"]
-        }
-        this.updateSchema = {
-            type: "object",
-            properties: {
-                id: { type: "string" },
-                name: { type: "string" },
-                type: { type: "string" },
-                authorList: { type: "array", items: { type: "string" } },
-                description: { type: "string" },
-                topics: { type: "array", items: { type: "string" } },
-                publishDate: { type: "string" },
-                img: { type: "string" },
-                published: { type: "boolean" },
-            },
-            required: ["id","name", "type", "description", "authorList", "topics", "publishDate", "img", "published"]
-        }
-        this.getSchema = { //also delete schema
-            type: "object",
-            properties: {
-                id: { type: "string" },
-            },
-            required: ["id"]
-        }
-
-    }
-    async create(req, res) {
-        try {
-            const valid = this.ajv.validate(this.createSchema, req.body);
-            if (valid) {
-                res.json(await this.dao.createItem(req.body));
-            }
-            else {
-                res.status(400).send("invalid input");
-            }
-        } catch (e) {
-            res.status(500).send(e);
-        }
-    }
-    async update(req, res) {
-        try {
-            const valid = this.ajv.validate(this.updateSchema, req.body);
-            if (valid) {
-                res.json(await this.dao.updateItem(req.body));
-            }
-            else {
-                res.status(400).send("invalid input");
-            }
-        } catch (e) {
-            res.status(500).send(e);
-        }
-    }
-    async get(req, res) {
-        try {
-            const valid = this.ajv.validate(this.getSchema, req.body);
-            if (valid) {
-                res.json(await this.dao.getItem(req.body));
-            }
-            else {
-                res.status(400).send("invalid input");
-            }
-        } catch (e) {
-            res.status(500).send(e);
-        }
-    }
-    async delete(req, res) {
-        try {
-            const valid = this.ajv.validate(this.getSchema, req.body);
-            if (valid) {
-                res.json(await this.dao.deleteItem(req.body));
-            }
-            else {
-                res.status(400).send("invalid input");
-            }
-        } catch (e) {
-            res.status(500).send(e);
-        }
-    }
-    async list(req, res) {
-        try {
-            res.json(await this.dao.listAllList(req.body));
-        } catch (e) {
-            res.status(500).send(e);
-        }
+        super(createSchema, updateSchema, getSchema, getSchema, dirPath);
     }
 }
 module.exports = DiagramAbl;

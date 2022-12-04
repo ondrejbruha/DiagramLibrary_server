@@ -16,10 +16,14 @@
     <StartWebBrowser>False</StartWebBrowser>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
     <DebuggerPort>8001</DebuggerPort>
+    <ScriptArguments>start</ScriptArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="abl\CRUD_ABL.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="abl\DiagramAbl.js">
       <SubType>Code</SubType>
     </Content>
