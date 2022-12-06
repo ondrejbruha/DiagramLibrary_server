@@ -8,7 +8,7 @@ class Abl {
         this.createSchema = createSchema;
         this.updateSchema = updateSchema;
         this.getSchema = getSchema;
-        this.deletSchema = deleteSchema;
+        this.deleteSchema = deleteSchema;
         this.ajv = new Ajv();
         this.dao = new Dao(dirPath);
     }

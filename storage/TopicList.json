@@ -23,5 +23,10 @@
     "name": "Fyzika",
     "description": "je zábava",
     "id": "8c65a44e3fea8a21"
+  },
+  {
+    "name": "Informatika",
+    "description": "Je důležitá",
+    "id": "a19bd050d415e0fe"
   }
 ]
