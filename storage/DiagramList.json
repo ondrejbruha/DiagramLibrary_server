@@ -1,104 +1,62 @@
 [
   {
-    "name": "graf 5",
-    "type": "graf",
+    "name": "Von Neumanovo schéma",
+    "type": "Schéma",
     "authorList": [
-      "id1",
-      "id2"
+      "cd033725201f4765"
     ],
-    "description": "this is first graph modified secon times",
+    "description": "Schéma počítače",
     "topics": [
-      "id1",
-      "id2"
+      "d5392723ad5092ce"
     ],
     "publishDate": "25.11.2022",
-    "img": "path/to/img",
+    "img": "https://sat02pap002files.storage.live.com/y4mwGXv61ybntqJG6l1QqIQdZiSOGzr3XUUeuSKwLrEJZW9CYnfZ9Tk-VdzU9cMQKSmMhPf4IYP5HcRGXKQp5rB03C01NNdHyhVoqWV8VY2ayB6r3e9luGGf3Ngxal8EOdSf5PrqjqKpMRtwHYaFy0rtek1wokqOlqyXRzZykRDFMshtJvRKA635pFyl9dsNyFM?width=275&height=183&cropmode=none",
     "published": true,
     "id": "e2ad64271bee7be1"
   },
   {
-    "name": "graf 2",
-    "type": "graf",
+    "name": "Gaussova křivka",
+    "type": "Graf",
     "authorList": [
-      "id1",
-      "id2"
+      "5d7f1a6a0a376b19"
     ],
-    "description": "this is first graph",
+    "description": "This is graph of Gauss distribution",
     "topics": [
-      "id1",
-      "id2"
+      "4eae3a28dd1b1c27"
     ],
     "publishDate": "25.11.2022",
-    "img": "path/to/img",
+    "img": "https://sat02pap002files.storage.live.com/y4mixeuqNpP6cHM4Oqg-fFxCNO-OC4MfUZOd7QjnFbAleiAbJkghhVidGazqN_mDHvge9IZoUPbt53JU-Er4NmyGv3-hCHRp8_6g_y5uvMtpTEUTvIKP1Zv-rYF60aqZXfGxe64ZJEswSBCGz91eO2EvIEr0405Uq-cOwP8r4YuVRubyj6y5S7qlrDs7BH632xG?width=1200&height=853&cropmode=none",
     "published": true,
     "id": "34093f96c9510b1a"
   },
   {
-    "name": "graf 3",
-    "type": "graf",
+    "name": "Fraktál",
+    "type": "Obrázek",
     "authorList": [
-      "id1",
-      "id2"
+      "06d1d3e11fa6d806"
     ],
-    "description": "this is first graph",
+    "description": "This is image of fractal.",
     "topics": [
-      "id1",
-      "id2"
+      "4eae3a28dd1b1c27"
     ],
     "publishDate": "25.11.2022",
-    "img": "path/to/img",
+    "img": "https://sat02pap002files.storage.live.com/y4ms6GZLDT8DQ0v8_l_y50wDi-hukrMncyHe45iE2-4Tkj89pN95XfsM0DbqP4_uEeJHEMPbQjfkT_MKXNOOSs4YYJJMtuJhmmoukOjiqkG2eZhEHmkDi0FQCEKH6F_hS0alP-bpzy6mwQ7nJbMErldhUE4Di3pohRvv8ntRhVILxiRgixRtaQbC2Mc29hYfWDJ?width=1024&height=768&cropmode=none",
     "published": true,
     "id": "f20b04b6c978bba0"
   },
   {
-    "name": "graf 4",
+    "name": "Mandelbrot set",
     "type": "graf",
     "authorList": [
-      "id1",
-      "id2"
+      "ba66f432a62fd942"
     ],
-    "description": "this is first graph",
+    "description": "Visualization of Mandelbrot set",
     "topics": [
-      "id1",
-      "id2"
+      "4eae3a28dd1b1c27"
     ],
     "publishDate": "25.11.2022",
-    "img": "path/to/img",
+    "img": "https://sat02pap002files.storage.live.com/y4myFP5Bq46ijGeTazX6lVs1dkYo86-oOodaUAod_GeemJVn7IU5SoNgfVH-IYLsoE4DIswZYmjTrgstqxvKtDPcxldiToBHMf1QLqUP66LD8uyMgtJs918d7ykOAop88SpLLtG_ZAm8BCFq113WWYw5lCCWspy-JhtkxZFIGySnkG2hX3DJZQ5z3eASr2yvVYO?width=640&height=480&cropmode=none",
     "published": true,
     "id": "15fbdfec53f05157"
-  },
-  {
-    "name": "graf 5",
-    "type": "graf",
-    "authorList": [
-      "id1",
-      "id2"
-    ],
-    "description": "this is first graph",
-    "topics": [
-      "id1",
-      "id2"
-    ],
-    "publishDate": "25.11.2022",
-    "img": "path/to/img",
-    "published": true,
-    "id": "e2ad64271bee7be1"
-  },
-  {
-    "name": "graf 5",
-    "type": "graf",
-    "authorList": [
-      "id1",
-      "id2"
-    ],
-    "description": "this is first graph",
-    "topics": [
-      "id1",
-      "id2"
-    ],
-    "publishDate": "25.11.2022",
-    "img": "path/to/img",
-    "published": true,
-    "id": "c435e8d64a3b2d45"
   }
 ]

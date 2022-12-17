@@ -1,5 +1,3 @@
-const { request } = require("http");
-const path = require("path");
 const Ajv = require("ajv").default;
 const Dao = require("../dao/Dao");
 

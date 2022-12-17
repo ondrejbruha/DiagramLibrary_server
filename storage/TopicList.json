@@ -1,32 +1,22 @@
 [
   {
-    "name": "Matika",
-    "description": "je zábava a sranda",
-    "id": "4eae3a28dd1b1c27"
-  },
-  {
-    "name": "Matika",
-    "description": "je zábava",
+    "name": "Matematika",
+    "description": "Je královna věd",
     "id": "4eae3a28dd1b1c27"
   },
   {
     "name": "Informatika",
-    "description": "je zábava",
+    "description": "Je dynamicky rozvíjející se vědní obor.",
     "id": "d5392723ad5092ce"
   },
   {
     "name": "Fyzika",
-    "description": "je zábava",
+    "description": "Je zábava.",
     "id": "1f10a51e58af3694"
   },
   {
-    "name": "Fyzika",
-    "description": "je zábava",
+    "name": "Ekonomie",
+    "description": "Je dnes velmi důležitá",
     "id": "8c65a44e3fea8a21"
-  },
-  {
-    "name": "Informatika",
-    "description": "Je důležitá",
-    "id": "a19bd050d415e0fe"
   }
 ]

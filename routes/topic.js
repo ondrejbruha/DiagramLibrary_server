@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const DiagramAbl = require("../abl/TopicAbl");
-const abl = new DiagramAbl();
+const TopicAbl = require("../abl/TopicAbl");
+const abl = new TopicAbl();
 
 router.post("/create", async (req, res) => {
     await abl.create(req, res);

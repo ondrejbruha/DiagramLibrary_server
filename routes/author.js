@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const DiagramAbl = require("../abl/AuthorAbl");
-const abl = new DiagramAbl();
+const AuthorAbl = require("../abl/AuthorAbl");
+const abl = new AuthorAbl();
 
 router.post("/create", async (req, res) => {
     await abl.create(req, res);
