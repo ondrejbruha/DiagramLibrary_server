@@ -19,5 +19,8 @@ router.post("/delete", async (req, res) => {
 router.get("/list", async (req, res) => {
     await abl.list(req, res);
 });
+router.get("/listFull", async (req, res) => {
+    await abl.listFull(req, res);
+});
 
 module.exports = router;
