@@ -32,7 +32,6 @@ class Dao {
         let id = list.find((e) => e.id === item.id);
         if (id !== undefined) {
             throw new Error("pleas try it again");
-            return;
         }
         list.push(item);
         await wf(this.path, JSON.stringify(list, null, 2));
@@ -48,7 +47,6 @@ class Dao {
         let index = list.findIndex((e) => e.id = item.id);
         if (index < 0) {
             throw new Error("this object does not exist");
-            return item;
         }
         list[index] = item;
         await wf(this.path, JSON.stringify(list,null,2));
