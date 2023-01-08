@@ -39,8 +39,7 @@ class Dao {
     }
     async getItem(id) {
         let list = await this.loadList();
-        const res = list.find((e) => e.id === id.id);
-        return res;
+        return list.find((e) => e.id === id.id);
     } 
     async updateItem(item) {
         let list = await this.loadList();
