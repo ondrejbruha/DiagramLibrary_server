@@ -73,5 +73,20 @@
     "img": "https://www.matweb.cz/pictures/linfun1.png",
     "published": true,
     "id": "c72da3466debe830"
+  },
+  {
+    "name": "Inflace",
+    "type": "Graf",
+    "authorList": [
+      "3aaf296780480899"
+    ],
+    "description": "Graf inflace v minulých letech",
+    "topics": [
+      "8c65a44e3fea8a21"
+    ],
+    "publishDate": "Sun Jan 08 2023 20:00:51 GMT+0100 (Středoevropský standardní čas)",
+    "img": "https://www.czso.cz/documents/10180/28532303/-695836997.png/fa9af539-aa44-4d1c-9559-dac5e75976fb?version=1.0&t=1610529683906",
+    "published": true,
+    "id": "7a7f85dfaf83b38c"
   }
 ]
