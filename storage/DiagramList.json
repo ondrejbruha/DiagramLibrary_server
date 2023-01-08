@@ -58,5 +58,20 @@
     "img": "https://sat02pap002files.storage.live.com/y4myFP5Bq46ijGeTazX6lVs1dkYo86-oOodaUAod_GeemJVn7IU5SoNgfVH-IYLsoE4DIswZYmjTrgstqxvKtDPcxldiToBHMf1QLqUP66LD8uyMgtJs918d7ykOAop88SpLLtG_ZAm8BCFq113WWYw5lCCWspy-JhtkxZFIGySnkG2hX3DJZQ5z3eASr2yvVYO?width=640&height=480&cropmode=none",
     "published": true,
     "id": "15fbdfec53f05157"
+  },
+  {
+    "name": "Lineární funkce",
+    "type": "Graf",
+    "authorList": [
+      "3aaf296780480899"
+    ],
+    "description": "Graf funkce",
+    "topics": [
+      "4eae3a28dd1b1c27"
+    ],
+    "publishDate": "Sun Jan 08 2023 19:25:23 GMT+0100 (Středoevropský standardní čas)",
+    "img": "https://www.matweb.cz/pictures/linfun1.png",
+    "published": true,
+    "id": "c72da3466debe830"
   }
 ]

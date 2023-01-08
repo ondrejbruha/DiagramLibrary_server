@@ -73,5 +73,52 @@ class DiagramAbl extends Abl{
             res.status(500).send(e);
         }
     }
+    async createFull(req, res){
+        let authorDao = new dao(dirPathAuthor);
+        let topicDao = new dao(dirPathTopic);
+        try {
+            let data = req.body;
+            const valid = this.ajv.validate(this.createSchema, data);
+            if(!valid){
+                res.status(400).send("invalid input");
+            }  
+            let authorList = data.authorList;
+            let knownAuthors = await authorDao.listAllList();
+            let containAuthor;
+            for(let a of authorList){
+                for (let k of knownAuthors){
+                    if(k.name === a){
+                        containAuthor = k;
+                    }
+                }
+            }
+            if(containAuthor){
+                data.authorList = [containAuthor.id];
+            }
+            else {
+                containAuthor = await authorDao.createItem({name: authorList[0]});
+            }
+            data.authorList = [containAuthor.id];
+            let topics = data.topics;
+            let knownTopics = await topicDao.listAllList();
+            let containTopic;
+            for(let t of topics){
+                for(let k of knownTopics){
+                    if(t === k.name){
+                        containTopic = k;
+                    }
+                }
+            }
+            if(!containTopic){
+                res.status(400).send("This topic does not exist");
+            }
+            data.topics = [containTopic.id];
+            await this.dao.createItem(data);
+            res.json(data);
+        }
+        catch(e){
+            res.status(500).send(e);
+        }
+    }
 }
 module.exports = DiagramAbl;
