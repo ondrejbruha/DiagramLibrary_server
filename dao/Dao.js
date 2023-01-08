@@ -40,7 +40,7 @@ class Dao {
     async getItem(id) {
         let list = await this.loadList();
         return list.find((e) => e.id === id.id);
-    } 
+    }
     async updateItem(item) {
         let list = await this.loadList();
         let index = list.findIndex((e) => e.id = item.id);
@@ -48,7 +48,7 @@ class Dao {
             throw new Error("this object does not exist");
         }
         list[index] = item;
-        await wf(this.path, JSON.stringify(list,null,2));
+        await wf(this.path, JSON.stringify(list, null, 2));
         return item;
     }
     async deleteItem(id) {
