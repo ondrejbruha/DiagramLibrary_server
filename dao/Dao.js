@@ -41,9 +41,13 @@ class Dao {
         let list = await this.loadList();
         return list.find((e) => e.id === id.id);
     }
+    async getItemByVal(val){
+        let list = await this.loadList();
+        return list.find((e) => e.name === val);
+    }
     async updateItem(item) {
         let list = await this.loadList();
-        let index = list.findIndex((e) => e.id = item.id);
+        let index = list.findIndex((e) => e.id === item.id);
         if (index < 0) {
             throw new Error("this object does not exist");
         }

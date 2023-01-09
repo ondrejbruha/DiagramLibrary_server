@@ -120,5 +120,31 @@ class DiagramAbl extends Abl{
             res.status(500).send(e);
         }
     }
+    async updateFull(req,res){
+        let authorDao = new dao(dirPathAuthor);
+        let topicDao = new dao(dirPathTopic);
+        try{
+            let body = req.body;
+            const valid = this.ajv.validate(updateSchema,body);
+            if(!valid){
+                res.status(400).send("invalid input");
+                return;
+            }
+            let authorId = (await authorDao.getItemByVal(body.authorList[0]));
+            let topicId = (await topicDao.getItemByVal(body.topics[0]));
+            if(authorId && topicId){
+                body.authorList[0] = authorId.id;
+                body.topics[0] = topicId.id;
+                req.body = body;
+                res.json(await this.dao.updateItem(req.body));
+                return;
+            }
+            res.status(400).send("invalidInput");
+            return;
+
+        }catch(e){
+            res.status(500).send(e);
+        }
+    }
 }
 module.exports = DiagramAbl;

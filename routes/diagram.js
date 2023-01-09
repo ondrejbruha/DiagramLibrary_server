@@ -25,4 +25,7 @@ router.get("/listFull", async (req, res) => {
 router.post("/createFull", async (req, res) => {
     await abl.createFull(req, res);
 });
+router.post("/updateFull", async (req, res) => {
+    await abl.updateFull(req, res);
+});
 module.exports = router;
